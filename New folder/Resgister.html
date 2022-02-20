@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .nav-bar{
+            background-color:#0397A0;
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items : center;
+         }
+         .weplay a{
+             padding-right: 400px;
+             margin-right: 700px;
+             text-decoration: none;
+            color:black;
+         }
+        .login a{
+            text-decoration: none;
+            color:black;
+        } 
+         .register a{
+            text-decoration: none;
+            color:black;
+            
+         }
+         .main{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 30px;
+        }
+        h1{
+            text-decoration: underline;
+            color:chocolate;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .form{
+         
+           background-color: #fff;
+           width: 600px;
+        }
+        label{
+            font-weight: 700;
+        }
+        #password{
+            border-width:0 0 2px 0 ;
+            border-color:skyblue ;
+            width: 90%;
+            padding: 10px;
+        }
+        #username:focus{
+            border-color: red;
+            outline: none;
+        }
+        #password:focus{
+            border-color: red;
+            outline: none;
+        }
+        #submit{
+            width: 93%;
+            border-radius: 2px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(0, 189, 110);
+        
+        }
+        .col-md-5{
+            padding: 10px;
+        }
+        .col-12{
+            padding: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+<div class="nav-bar">
+        <div class="weplay"> <a href="Home.html">WePlay    </a> </div>    
+        <div class="login"> <a href="Login.html">Login</a></div>   
+        <div class="register"> <a href="Resgister.html">Register</a></div>   
+    </div>
+    <h1>Resgiter</h1>
+    <div class="main">
+        <form class="row g-3">
+            <div class="col-md-5">
+                <label for="inputUsername4" class="form-label">Username</label>
+                <input type="text" class="form-control" id="inputusername4">
+              </div>
+            <div class="col-md-5">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-5">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-5">
+                <label for="inputPassword4" class="form-label">Re:Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+           
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+          </form>
+</body>
+</html>

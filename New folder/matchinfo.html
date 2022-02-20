@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .nav-bar{
+            background-color:#0397A0;
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items : center;
+         }
+         .weplay a{
+             padding-right: 400px;
+             margin-right: 600px;
+             text-decoration: none;
+            color:black;
+         }
+        .login a{
+            text-decoration: none;
+            color:black;
+        } 
+         .register a{
+            text-decoration: none;
+            color:black;
+            
+         }
+         .main{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 30px;
+        }
+        h1{
+            text-decoration: underline;
+            color:chocolate;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .form{
+         
+           background-color: #fff;
+           width: 600px;
+        }
+        label{
+            font-weight: 700;
+        }
+        #password{
+            border-width:0 0 2px 0 ;
+            border-color:skyblue ;
+            width: 90%;
+            padding: 10px;
+        }
+        #username:focus{
+            border-color: red;
+            outline: none;
+        }
+        #password:focus{
+            border-color: red;
+            outline: none;
+        }
+        #submit{
+            width: 93%;
+            border-radius: 2px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(0, 189, 110);
+        
+        }
+        .col-md-5{
+            padding: 10px;
+        }
+        .col-12{
+            padding: 10px;
+        }
+        .feature{
+    padding: 40px;
+    display: inline-flex;
+}
+.feature1{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}
+.feature-para p{
+    color:rgb(71, 71, 71);
+    font-size: 17px;
+    text-align: right;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+.feature-para1 h3{
+    color: #0397A0;
+    font-size:22px;
+    letter-spacing: 1px;
+}
+.feature-para1 h1{
+    letter-spacing: 1px;
+    font-size: 38px;
+    font-weight: 500;
+}
+.feature2{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding-right: 100px;
+    
+}
+.feature-img{
+    padding-right: 600px;
+    width:100%;
+    border-radius: 10px;
+    border: 2px white;
+    box-shadow: 0 0 10px 0.5px rgb(14, 13, 13, 0.5);
+}
+.feature-img label{
+    padding-left: 20px;
+}
+#admin{
+    padding:auto;
+}
+.feature-img img{
+    width:85%;
+    height: 450px;
+    padding-left:40px;
+}
+.feature-content{
+    height: 450px;
+    margin-right: 400px;
+    padding-left: 100px;
+    
+}
+.feature-content1, .feature-content2, .feature-content3{
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px white;
+    box-shadow: 0 0 10px 0.5px rgb(14, 13, 13, 0.5);
+    margin: 12px;
+    height: 400px;
+    
+    width:400px;
+}
+.feature-icon{
+    padding: 40px;
+    margin: 10px;
+}
+.feature-heading{
+    padding: 20px;
+}
+.feature-heading h2{
+    color: #0397A0;
+    padding: 5px;
+    font-size: 18px;
+    font-weight:600;
+}
+.feature-heading p{
+    padding: 10px;
+    color:rgb(71, 71, 71);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+#button{
+    background-color: #0397A0 ;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 5px;
+}
+.feature-content dropdown{
+    padding-right: 100px;
+}
+#webserver{
+    margin-left: 40px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+<div class="nav-bar">
+        <div class="weplay"> <a href="#">WePlay    </a> </div>    
+        <div class="login"> <a href="Sports.html">Sports</a></div>   
+        <div class="login"> <a href="Venues.html">Venues</a></div>   
+        <div class="login "> <a href="#">Profile</a></div>   
+        <div class="login"> <a href="Login.html">Signout</a></div>   
+</div>
+<h1>Match Info</h1>
+<div class="feature">
+    <div class="feature2">
+        
+        <div class="feature-img">
+        <div>
+              <label for="role">Choose the date: </label> <br/>
+        <input type="radio" id="admin" name="role" value="admin" />
+        <label for="admin">21st</label> <br/>
+        <input type="radio" id="admin" name="role" value="engineer" />
+        <label for="engineer">22nd</label> <br/>
+        <input type="radio" id="admin" name="role" value="manager" />
+        <label for="manager">23rd</label> <br/>
+        <input type="radio" id="admin" name="role" value="guest" />
+        <label for="guest">24th</label> <br/> <br/>
+        </div>
+        <div>
+        <label for="role">Choose the Game Mode: </label>
+        <input type="checkbox" id="admin" name="role" value="admin" />
+        <label for="admin">5 vs 5</label> <br/>
+        <input type="checkbox" id="engineer" name="role" value="engineer" />
+        <label for="engineer">7 vs 7</label> <br/>
+        </div>
+            <div class="button">
+                <a href="futsalvenues.html">
+                <input type="button" id="button" value="Book">
+                </a>
+            </div>
+        </div>
+        
+        <div class="feature-content">
+            <div class="feature-content1">
+              <label for="webserver">Choose your time slot:</label>
+        <select id="webserver" name="webserver">
+            <option>--Choose a timeslot--</option>
+            <option value="asiaserver">6-7</option>
+            <option value="oceaniaserver">7-8</option>
+            <option value="middleeastserver">8-9</option>
+        </select> <br/> <br/>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

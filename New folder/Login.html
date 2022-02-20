@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .nav-bar{
+            background-color:#0397A0;
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items : center;
+         }
+         .weplay a{
+             padding-right: 400px;
+             margin-right: 700px;
+             text-decoration: none;
+            color:black;
+         }
+        .login a{
+            text-decoration: none;
+            color:black;
+        } 
+         .register a{
+            text-decoration: none;
+            color:black;
+            
+         }
+         .main{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 30px;
+        }
+        h1{
+            text-decoration: underline;
+            color:chocolate;
+            text-align: center;
+            padding-bottom: 70px;
+        }
+        .form{
+           padding: 60px;
+           background-color: #fff;
+           width: 600px;
+        }
+        label{
+            font-weight: 700;
+        }
+        #username{
+            border-width:0 0 2px 0 ;
+            border-color:skyblue ;
+            width: 90%;
+            padding: 10px;
+        }
+        #password{
+            border-width:0 0 2px 0 ;
+            border-color:skyblue ;
+            width: 90%;
+            padding: 10px;
+        }
+        #username:focus{
+            border-color: red;
+            outline: none;
+        }
+        #password:focus{
+            border-color: red;
+            outline: none;
+        }
+        #submit{
+            width: 93%;
+            border-radius: 2px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(0, 189, 110);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+<div class="nav-bar">
+        <div class="weplay"> <a href="#">WePlay    </a> </div>    
+        <div class="login"> <a href="Login.html">Login</a></div>   
+        <div class="register"> <a href="Resgister.html">Register</a></div>   
+    </div>
+    <div class="main">
+        <div class="form">
+            <h1>LOGIN </h1>
+            <label for="username">Username</label> 
+            <input type="text" id="username" name="username" placeholder="Username" /> <br/> <br/>
+            <label for="password">Password</label> 
+            <input type="password" id="password" name="password" placeholder="Password"/> <br/> <br/>
+            <input type="checkbox" name="rememberme" id="rememberme"/>
+            <label for="rememberme">Remember Me</label> <br/> <br/>
+            <a href="Home.html">
+            <input type="submit" name="submit" id="submit" value="Submit"/>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

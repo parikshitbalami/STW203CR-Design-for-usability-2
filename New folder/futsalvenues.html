@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .nav-bar{
+            background-color:#0397A0;
+            display: flex;
+            padding: 20px;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items : center;
+         }
+         .weplay a{
+             padding-right: 400px;
+             margin-right: 600px;
+             text-decoration: none;
+            color:black;
+         }
+        .login a{
+            text-decoration: none;
+            color:black;
+        } 
+         .register a{
+            text-decoration: none;
+            color:black;
+            
+         }
+         .main{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding: 30px;
+        }
+        h1{
+            text-decoration: underline;
+            color:chocolate;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .form{
+         
+           background-color: #fff;
+           width: 600px;
+        }
+        label{
+            font-weight: 700;
+        }
+        #password{
+            border-width:0 0 2px 0 ;
+            border-color:skyblue ;
+            width: 90%;
+            padding: 10px;
+        }
+        #username:focus{
+            border-color: red;
+            outline: none;
+        }
+        #password:focus{
+            border-color: red;
+            outline: none;
+        }
+        #submit{
+            width: 93%;
+            border-radius: 2px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(0, 189, 110);
+        
+        }
+        .col-md-5{
+            padding: 10px;
+        }
+        .col-12{
+            padding: 10px;
+        }
+        .blog{
+    background-image: url('images/2557701.jpg     ');
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+    padding: 40px;
+}
+.blog1{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+}
+.blog-para{
+    text-align: justify;
+    padding-left: 400px;
+}
+.blog-para h3{
+    color: white;
+    font-size:22px;
+    letter-spacing: 1px;
+    text-align: right;
+}
+.blog-para h1{
+    letter-spacing: 1px;
+    font-size: 37px;
+    font-weight: 500;
+}
+.blog-para1 p{
+    color:rgb(71, 71, 71);
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 2px;
+    padding-left: 30px; 
+} 
+.blog2{
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.blog-content1{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+.blog-img img{
+    width: 99%;
+    height: 250px;
+    align-items: center;
+} 
+.blog-content h5{
+    font-size: 18px;
+    font-weight: 100;
+    padding:10px 0 10px 0;
+}
+.blog-content h3{
+    color:rgb(111, 161, 35);
+    font-size: 22px;
+    padding:0 0 10px 0;
+}
+.blog-content p{
+    color:rgb(71, 71, 71);
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.blog-time{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-tag p{
+    padding-right: 100px;
+}
+#button{
+     background-color:#0397A0 ;
+     padding: 10px;
+     border-style: none;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+<div class="nav-bar">
+        <div class="weplay"> <a href="Home.html">WePlay    </a> </div>    
+        <div class="login"> <a href="Sports.html">Sports</a></div>   
+        <div class="login"> <a href="Venues.html">Venues</a></div>   
+        <div class="login "> <a href="#">Profile</a></div>   
+        <div class="login"> <a href="Login.html">Signout</a></div>   
+</div>
+<h1>Futsal Venues</h1>
+<div class="blog">
+    <div class="blog2">
+        <div class="blog-content1">
+            <div class="blog-img">
+                <img src="images/futsal1.jpg"/>    
+            </div>
+            <div class="blog-content">
+                <h5>Venue1</h5>
+                <h5>Price</h5>
+                <h5>Location</h5>
+                <div class="button">
+                    <a href="futsalvenues.html">
+                    <input type="button" id="button" value="Full Details">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-content1">
+            <div class="blog-img">
+                <img src="images/futsal2.jpg"/>    
+            </div>
+            <div class="blog-content">
+                <h5>Venue2</h5>
+                <h5>Price</h5>
+                <h5>Location</h5>
+                <div class="button">
+                    <a href="fulldetail.html">
+                    <input type="button" id="button" value="Full Details">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-content1">
+            <div class="blog-img">
+                <img src="images/futsal3.jpg"/>    
+            </div>
+            <div class="blog-content">
+                <h5>Venue3</h5>
+                <h5>Price</h5>
+                <h5>Location</h5>
+                <div class="button">
+                    <a href="fulldetail.html">
+                    <input type="button" id="button" value="Full Details">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
